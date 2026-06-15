@@ -69,8 +69,8 @@ const getAccessToken = async () => {
     return cachedToken
   }
   
-  // 否则重新获取
-  const url = `https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=${BAIDU_CONFIG.apiKey}&client_secret=${BAIDU_CONFIG.secretKey}`
+  // 否则重新获取（通过 Netlify 代理避免跨域）
+  const url = `/api/baidu-token?grant_type=client_credentials&client_id=${BAIDU_CONFIG.apiKey}&client_secret=${BAIDU_CONFIG.secretKey}`
   
   const response = await fetch(url, {
     method: 'POST',
