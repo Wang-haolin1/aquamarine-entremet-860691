@@ -177,7 +177,7 @@ const handleResetConfig = () => {
   Object.assign(apiConfig, {
     provider: 'tongyi',
     apiKey: 'sk-96f45e8bc7ac4063bbb319494fcab27f',
-    model: 'qwen-turbo',
+    model: 'qwen3.7-plus',
     baseUrl: 'https://dashscope.aliyuncs.com'
   })
 }
