@@ -158,7 +158,7 @@ const menuItems = [
 const apiConfig = reactive({
   provider: 'tongyi',
   apiKey: 'sk-96f45e8bc7ac4063bbb319494fcab27f',
-  model: 'qwen3.7-plus',
+  model: 'qwen-plus',
   baseUrl: 'https://dashscope.aliyuncs.com'
 })
 
@@ -177,7 +177,7 @@ const handleResetConfig = () => {
   Object.assign(apiConfig, {
     provider: 'tongyi',
     apiKey: 'sk-96f45e8bc7ac4063bbb319494fcab27f',
-    model: 'qwen3.7-plus',
+    model: 'qwen-plus',
     baseUrl: 'https://dashscope.aliyuncs.com'
   })
 }
